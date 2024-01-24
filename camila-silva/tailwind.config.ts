@@ -8,11 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        sm: "16px",
+        base: "18px",
+        xl: "48px",
+        "2xl": "64px",
+      },
       colors: {
         "default-pink": "#EA8A83",
+        "default-green": "#2F4A47",
+        "default-bege": "#E2DBC9",
       },
       fontFamily: {
         lato: ["var(--font-lato)"],
+        cormorantGaramond: ["var(--font-cormorant-garamond)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
