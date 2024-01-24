@@ -3,6 +3,8 @@ import Banner from "@/components/Banner";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Button from "@/components/Button";
+import Tape from "@/components/Tape";
+import Title from "@/components/Title";
 
 export default function Home() {
   return (
@@ -15,7 +17,6 @@ export default function Home() {
           height={708}
           alt="Logo escrito Camila Silva psicóloga."
         />
-
         <Image
           src="/images/CamilaSilva1.png"
           width={720}
@@ -24,10 +25,10 @@ export default function Home() {
         />
         <Banner className="z-10 absolute mt-[162px] mr-[600px] py-[35px] px-[54px]">
           <p>PSICOLOGA CRP 203094/908</p>
-          <h1 className="font-cormorantGaramond font text-2xl">
+          <Title isMainHeading>
             Guiando mulheres em transformações internas com{" "}
             <span className="text-default-pink">empatia</span>
-          </h1>
+          </Title>
           <p className="mt-2">
             Seja bem-vinda ao meu espaço dedicado ao acolhimento e crescimento
             pessoal. Aqui, a empatia é a bússola que guia cada passo na jornada
@@ -38,6 +39,7 @@ export default function Home() {
           </Button>
         </Banner>
       </HeroSection>
+      <Tape />
     </main>
   );
 }
