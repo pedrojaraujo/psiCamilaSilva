@@ -21,11 +21,11 @@ const Header = () => {
           width={102}
           height={102}
           alt="Logo escrito Camila Silva psicóloga."
-          className="laptop:w-[80px]"
+          className="desktop:w-[102px] laptop:w-[80px]"
         />
       </div>
       <div className="flex items-center gap-10">
-        <ul className="flex gap-6  font-semibold laptop:text-sm">
+        <ul className="flex gap-6 font-semibold desktop:text-base laptop:text-sm">
           <li>
             <Link href="#">Quem sou</Link>
           </li>

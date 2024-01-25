@@ -3,7 +3,7 @@ const Title = ({ children, className, isMainHeading }: Props) => {
 
   return (
     <Tag
-      className={`${className} font-cormorantGaramond text-2xl laptop:text-xl`}
+      className={`${className} font-cormorantGaramond desktop:text-2xl laptop:text-xl`}
     >
       {children}
     </Tag>

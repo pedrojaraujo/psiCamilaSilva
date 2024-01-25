@@ -17,23 +17,23 @@ export default function Home() {
           width={720}
           height={708}
           alt="Logo escrito Camila Silva psicóloga."
-          className="laptop:w-auto laptop:h-[532px]"
+          className="laptop:w-auto laptop:h-[532px] desktop:w-[720px] desktop:h-[708px]"
         />
         <Image
           src="/images/CamilaSilva1.png"
           width={720}
           height={708}
           alt="Logo escrito Camila Silva psicóloga."
-          className="laptop:w-auto laptop:h-[532px]"
+          className="laptop:w-auto laptop:h-[532px] desktop:w-[720px] desktop:h-[708px]"
         />
         <Banner
           className="
         z-10 
         absolute 
-        mt-[162px] 
+        desktop:mt-[162px] 
+        desktop:mr-[600px] 
         laptop:mt-[80px] 
         laptop:mr-[400px]
-        mr-[600px] 
         py-[35px] 
         px-[54px]"
         >
