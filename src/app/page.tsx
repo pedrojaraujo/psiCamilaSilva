@@ -5,10 +5,11 @@ import HeroSection from "@/components/HeroSection";
 import Button from "@/components/Button";
 import Tape from "@/components/Tape";
 import Title from "@/components/Title";
+import Paragraph from "@/components/Paragraph";
 
 export default function Home() {
   return (
-    <main className="font-lato">
+    <main>
       <Header />
       <HeroSection>
         <Image
@@ -16,24 +17,37 @@ export default function Home() {
           width={720}
           height={708}
           alt="Logo escrito Camila Silva psicóloga."
+          className="laptop:w-auto laptop:h-[532px]"
         />
         <Image
           src="/images/CamilaSilva1.png"
           width={720}
           height={708}
           alt="Logo escrito Camila Silva psicóloga."
+          className="laptop:w-auto laptop:h-[532px]"
         />
-        <Banner className="z-10 absolute mt-[162px] mr-[600px] py-[35px] px-[54px]">
-          <p>PSICOLOGA CRP 203094/908</p>
+        <Banner
+          className="
+        z-10 
+        absolute 
+        mt-[162px] 
+        laptop:mt-[80px] 
+        laptop:mr-[400px]
+        mr-[600px] 
+        py-[35px] 
+        px-[54px]"
+        >
+          <Paragraph>PSICOLOGA CRP 203094/908</Paragraph>
           <Title isMainHeading>
             Guiando mulheres em transformações internas com{" "}
             <span className="text-default-pink">empatia</span>
           </Title>
-          <p className="mt-2">
+          <Paragraph className="mt-2">
             Seja bem-vinda ao meu espaço dedicado ao acolhimento e crescimento
             pessoal. Aqui, a empatia é a bússola que guia cada passo na jornada
             da autodescoberta e do fortalecimento emocional.
-          </p>
+          </Paragraph>
+
           <Button className="w-[350px] font-normal mt-[15px]">
             QUERO AGENDAR UMA CONSULTA
           </Button>
