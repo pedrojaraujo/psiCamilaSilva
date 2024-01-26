@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 import Tape from "@/components/Tape";
 import Title from "@/components/Title";
 import Paragraph from "@/components/Paragraph";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -88,7 +88,7 @@ export default function Home() {
             <Title className="text-xl w-10/12">
               Eu já ajudei centenas de mulheres que estavam enfrentando
               problemas de ...
-              <FaArrowRightLong className="text-[200px]" />
+              <BsArrowRight  className="text-[200px]" />
             </Title>
           </Banner>
         </div>
