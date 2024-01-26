@@ -7,6 +7,7 @@ import Tape from "@/components/Tape";
 import Title from "@/components/Title";
 import Paragraph from "@/components/Paragraph";
 import { BsArrowRight } from "react-icons/bs";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -84,13 +85,18 @@ export default function Home() {
           />
         </div>
         <div className="w-full justify-start mr-10 mt-16">
-          <Banner className="w-[771px] h-[708px] flex flex-col justify-center items-center">
+          <Banner className="w-[710px] h-[680px] flex flex-col justify-center items-center">
             <Title className="text-xl w-10/12">
               Eu já ajudei centenas de mulheres que estavam enfrentando
               problemas de ...
-              <BsArrowRight  className="text-[200px]" />
+              <BsArrowRight className="text-[100px] m-auto" />
             </Title>
           </Banner>
+        </div>
+        <div className="absolute z-20 mt-[343px] flex gap-10 ml-[750px]">
+          <Card className="w-[306px] h-[486px]">Card</Card>
+          <Card className="w-[306px] h-[486px]">Card</Card>
+          <Card className="w-[306px] h-[486px]">Card</Card>
         </div>
       </section>
     </main>
