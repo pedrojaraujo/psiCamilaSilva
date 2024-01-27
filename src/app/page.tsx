@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Banner from "@/components/Banner";
 import Header from "@/components/Header";
@@ -8,10 +10,11 @@ import Title from "@/components/Title";
 import Paragraph from "@/components/Paragraph";
 import { BsArrowRight } from "react-icons/bs";
 import Card from "@/components/Card";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Header />
       <HeroSection>
         <Image
@@ -61,42 +64,40 @@ export default function Home() {
         </Banner>
       </HeroSection>
       <Tape />
-      <section className="desktop:w-full laptop:w-full mt-20 flex flex-col items-center">
-        <Title className="w-full text-center text-xl desktop:w-[929px]">
+      <div className="w-screen flex justify-center h-[300px]">
+        <Title className="text-xl desktop:w-[929px] text-center mt-28">
           Você deveria viver uma{" "}
           <span className="font-semibold">vida gratificante</span> e não apenas
           sobreviver...
         </Title>
-        <div
-          className="
+      </div>
+      <div
+        className="
         w-full
         z-20
-        mt-28
         absolute
         flex
         justify-start
+        mb-[200px]
         "
-        >
-          <Image
-            src="/images/ellipses.svg"
-            width={180}
-            height={280}
-            alt="Logo escrito Camila Silva psicóloga."
-          />
-        </div>
-        <div className="w-full justify-start mr-10 mt-16">
-          <Banner className="w-[710px] h-[680px] flex flex-col justify-center items-center">
-            <Title className="text-xl w-10/12">
-              Eu já ajudei centenas de mulheres que estavam enfrentando
-              problemas de ...
-              <BsArrowRight className="text-[100px] m-auto" />
-            </Title>
-          </Banner>
-        </div>
-        <div className="absolute z-20 mt-[343px] flex gap-10 ml-[750px]">
-          <Card className="w-[306px] h-[486px]">Card</Card>
-          <Card className="w-[306px] h-[486px]">Card</Card>
-          <Card className="w-[306px] h-[486px]">Card</Card>
+      >
+        <Image
+          src="/images/ellipses.svg"
+          width={180}
+          height={280}
+          alt="Logo escrito Camila Silva psicóloga."
+        />
+      </div>
+      <section className="desktop:w-full flex justify-between align-middle items-center overflow-hidden ">
+        <Banner className="w-[710px] h-[680px] flex flex-col justify-center items-center mt-16">
+          <Title className="text-xl w-10/12">
+            Eu já ajudei centenas de mulheres que estavam enfrentando problemas
+            de ...
+            <BsArrowRight className="text-[100px] m-auto" />
+          </Title>
+        </Banner>
+        <div className="w-11/12 absolute z-10 ml-[650px] mt-36 ">
+          <Carousel className="h-[580px]" />
         </div>
       </section>
     </main>
