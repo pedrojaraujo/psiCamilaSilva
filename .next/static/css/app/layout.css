@@ -930,7 +930,6 @@ video {
   display: flex;
   align-items: center;
   overflow: hidden;
-  
 }
 
 @media (min-width: 1024px) {
@@ -1032,3 +1031,4 @@ video {
     font-size: 18px;
   }
 }
+
