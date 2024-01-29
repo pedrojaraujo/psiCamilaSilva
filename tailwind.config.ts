@@ -28,6 +28,7 @@ const config: Config = {
       colors: {
         "default-pink": "#EA8A83",
         "default-green": "#2F4A47",
+        "default-greenLight": "#486666",
         "default-bege": "#E2DBC9",
       },
       fontFamily: {

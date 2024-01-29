@@ -41,7 +41,9 @@ const Header = () => {
             <Link href="#">Especialização</Link>
           </li>
         </ul>
-        <Button>Contato</Button>
+        <Button className="bg-default-pink desktop:text-base laptop:text-sm">
+          Contato
+        </Button>
       </div>
     </header>
   );

@@ -9,8 +9,10 @@ import Tape from "@/components/Tape";
 import Title from "@/components/Title";
 import Paragraph from "@/components/Paragraph";
 import { BsArrowRight } from "react-icons/bs";
-import Card from "@/components/Card";
+import { LuBrain } from "react-icons/lu";
+import { PiFlowerLotusLight } from "react-icons/pi";
 import Carousel from "@/components/Carousel";
+import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
@@ -67,7 +69,7 @@ export default function Home() {
             da autodescoberta e do fortalecimento emocional.
           </Paragraph>
 
-          <Button className="w-[400px] font-normal mt-[15px]">
+          <Button className="w-[400px] font-normal mt-[15px] bg-default-pink desktop:text-base laptop:text-sm">
             QUERO AGENDAR UMA CONSULTA
           </Button>
         </Banner>
@@ -80,7 +82,6 @@ export default function Home() {
           sobreviver...
         </Title>
       </div>
-
       <section id="section__carousel__swiper">
         <div
           className="
@@ -115,6 +116,51 @@ export default function Home() {
 
         <Carousel />
       </section>
+      <AboutMe className="flex justify-around items-center">
+        <div className="flex flex-col desktop:w-1/3">
+          <Title className="text-xl"> Prazer, sou a Camila Silva</Title>
+          <Paragraph>PSICOLOGA CRP 203094/908</Paragraph>
+          <Paragraph className="w-[500px] mt-5">
+            Psicóloga comprometida em oferecer um espaço acolhedor para todos
+            que buscam equilíbrio emocional. Com um foco especial na saúde
+            emocional da mulher. Estou aqui para guiá-lo(a) em uma jornada de
+            autoconhecimento, oferecendo apoio empático e ferramentas para
+            transformar desafios em oportunidades de evolução.
+          </Paragraph>
+          <p className="font-lato mt-5 text-[26px]">
+            Conheça minhas expeiências e qualificações
+          </p>
+          <div
+            className="flex justify-start items-center pl-6 gap-5 border-solid border-[0.5px] border-default-greenLight mt-4 rounded-2xl py-2
+          w-[60%]
+          text-default-green
+          "
+          >
+            <LuBrain className="text-[50px]" />
+            <Paragraph>Terapia Cognitivo-Comportamental</Paragraph>
+          </div>
+          <div
+            className="flex justify-start pl-6 items-center gap-5 border-solid border-[0.5px] border-default-greenLight mt-4 rounded-2xl py-2
+            w-[60%]
+           text-default-green
+          "
+          >
+            <PiFlowerLotusLight className="text-[50px]" />
+            <Paragraph>Mindfulness e Espiritualidade</Paragraph>
+          </div>
+          <Button className="bg-default-greenLight font-normal text-lg mt-5 w-[50%] text-sm">
+            QUERO AGENDAR UMA CONSULTA
+          </Button>
+        </div>
+        <div>
+          <Image
+            src="/images/CamilaSilva2.png"
+            width={526}
+            height={575}
+            alt="Camila Silva psicóloga."
+          />
+        </div>
+      </AboutMe>
     </main>
   );
 }
