@@ -16,29 +16,38 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Header />
-      <HeroSection>
-        <Image
-          src="/images/plant.png"
-          width={720}
-          height={708}
-          alt="Logo escrito Camila Silva psicóloga."
-          className="laptop:w-auto laptop:h-[532px] desktop:w-[720px] desktop:h-[708px]"
-        />
-        <Image
-          src="/images/CamilaSilva1.png"
-          width={720}
-          height={708}
-          alt="Logo escrito Camila Silva psicóloga."
-          className="laptop:w-auto laptop:h-[532px] desktop:w-[720px] desktop:h-[708px]"
-        />
+      <HeroSection className="items-center">
+        <div id="img__heroSection">
+          <Image
+            src="/images/plant.png"
+            width={2880}
+            height={2832}
+            alt="Logo escrito Camila Silva psicóloga."
+            className="
+            desktop:w-full
+            desktop:h-full
+            laptop:w-full 
+            laptop:h-auto "
+          />
+        </div>
+        <div id="img__heroSection">
+          <Image
+            src="/images/CamilaSilva1.png"
+            width={2880}
+            height={2832}
+            alt="Logo escrito Camila Silva psicóloga."
+            className="
+            desktop:w-full
+            desktop:h-full
+            laptop:w-full
+            laptop:h-auto"
+          />
+        </div>
         <Banner
           className="
         z-10 
         absolute 
-        desktop:mt-[162px] 
-        desktop:mr-[600px] 
-        laptop:mt-[80px] 
-        laptop:mr-[400px]
+        mr-[33%]
         py-[35px] 
         px-[54px]
         desktop:w-[720px] 
@@ -58,7 +67,7 @@ export default function Home() {
             da autodescoberta e do fortalecimento emocional.
           </Paragraph>
 
-          <Button className="w-[350px] font-normal mt-[15px]">
+          <Button className="w-[400px] font-normal mt-[15px]">
             QUERO AGENDAR UMA CONSULTA
           </Button>
         </Banner>
@@ -71,34 +80,32 @@ export default function Home() {
           sobreviver...
         </Title>
       </div>
-      <div
-        className="
-        w-full
+
+      <section id="section__carousel__swiper">
+        <div
+          className="
+        flex
         z-20
         absolute
-        flex
-        justify-start
-        mb-[200px]
+        mb-[600px]
         "
-      >
-        <Image
-          src="/images/ellipses.svg"
-          width={180}
-          height={280}
-          alt="Logo escrito Camila Silva psicóloga."
-        />
-      </div>
-      <section className="desktop:w-full flex justify-between align-middle items-center overflow-hidden ">
-        <Banner className="w-[710px] h-[680px] flex flex-col justify-center items-center mt-16">
+        >
+          <Image
+            src="/images/ellipses.svg"
+            width={180}
+            height={280}
+            alt="Logo escrito Camila Silva psicóloga."
+          />
+        </div>
+        <Banner className="w-[750px] h-[680px] flex flex-col justify-center items-center ">
           <Title className="text-xl w-10/12">
             Eu já ajudei centenas de mulheres que estavam enfrentando problemas
             de ...
             <BsArrowRight className="text-[100px] m-auto" />
           </Title>
         </Banner>
-        <div className="w-11/12 absolute z-10 ml-[650px] mt-36 ">
-          <Carousel className="h-[580px]" />
-        </div>
+
+        <Carousel />
       </section>
     </main>
   );

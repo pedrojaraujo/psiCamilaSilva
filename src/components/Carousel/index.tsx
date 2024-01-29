@@ -1,9 +1,8 @@
 "use client";
-
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "@/components/Card";
-
+import "./carousel.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,6 +10,7 @@ import "swiper/css/pagination";
 const Carousel = ({ className }: Props) => {
   return (
     <Swiper
+      id="carousel__swiper"
       className={`${className}`}
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}

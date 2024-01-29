@@ -1,6 +1,8 @@
-const HeroSection = ({ children }: Props) => {
+const HeroSection = ({ children, className }: Props) => {
   return (
-    <section className="desktop:h-[708px] laptop:h-[532px] flex justify-center mt-5">
+    <section
+      className={`${className} desktop:h-[790px] laptop:h-[532px] flex justify-center mt-5 overflow-hidden`}
+    >
       {children}
     </section>
   );

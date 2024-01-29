@@ -13,7 +13,9 @@ const Header = () => {
     align-middle 
     w-10/12 
     mx-auto 
-    mt-5"
+    mt-5
+    overflow-hidden
+    "
     >
       <div>
         <Image

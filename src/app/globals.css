@@ -3,7 +3,21 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#img__heroSection {
+  overflow: hidden;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+#section__carousel__swiper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  
 }
