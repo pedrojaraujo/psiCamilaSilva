@@ -84,9 +84,7 @@ export default function Home() {
       <section id="section__carousel__swiper">
         <div
           className="
-        flex
-        z-20
-        absolute
+        
         mb-[600px]
         "
         >
@@ -97,7 +95,17 @@ export default function Home() {
             alt="Logo escrito Camila Silva psicóloga."
           />
         </div>
-        <Banner className="w-[750px] h-[680px] flex flex-col justify-center items-center ">
+        <Banner
+          className="
+        w-[750px] 
+        h-[680px] 
+        flex 
+        flex-col 
+        justify-center 
+        items-center 
+        absolute 
+        -z-10"
+        >
           <Title className="text-xl w-10/12">
             Eu já ajudei centenas de mulheres que estavam enfrentando problemas
             de ...
