@@ -11,7 +11,7 @@ const Carousel = ({ className }: Props) => {
   return (
     <Swiper
       id="carousel__swiper"
-      className={`${className}`}
+      className={`${className} 2xl:h-[550px] xl:h-[480px] lg:h-[450px]`}
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={10}
@@ -23,31 +23,74 @@ const Carousel = ({ className }: Props) => {
       onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
+        <Card
+          className="
+          lg:w-[224px]
+          lg:h-[385px]
+          xl:w-[265px]
+          xl:h-[445px]
+          2xl:w-[306px] 
+          2xl:h-[486px]
+        "
+        >
+          Card
+        </Card>
       </SwiperSlide>
       <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
+        <Card
+          className="
+          lg:w-[224px]
+          lg:h-[385px]
+          xl:w-[265px]
+          xl:h-[445px]
+          2xl:w-[306px] 
+          2xl:h-[486px]
+        "
+        >
+          Card
+        </Card>
       </SwiperSlide>
       <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
+        <Card
+          className="
+          lg:w-[224px]
+          lg:h-[385px]
+          xl:w-[265px]
+          xl:h-[445px]
+          2xl:w-[306px] 
+          2xl:h-[486px]
+        "
+        >
+          Card
+        </Card>
       </SwiperSlide>
       <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
+        <Card
+          className="
+          lg:w-[224px]
+          lg:h-[385px]
+          xl:w-[265px]
+          xl:h-[445px]
+          2xl:w-[306px] 
+          2xl:h-[486px]
+        "
+        >
+          Card
+        </Card>
       </SwiperSlide>
       <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Card className="w-[306px] h-[486px]">Card</Card>
+        <Card
+          className="
+          lg:w-[224px]
+          lg:h-[385px]
+          xl:w-[265px]
+          xl:h-[445px]
+          2xl:w-[306px] 
+          2xl:h-[486px]
+        "
+        >
+          Card
+        </Card>
       </SwiperSlide>
     </Swiper>
   );

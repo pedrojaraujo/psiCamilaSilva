@@ -8,22 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      screens: {
-        tablet: "640px",
-        // => @media (min-width: 640px) { ... }
-
-        laptop: "1024px",
-        // => @media (min-width: 1024px) { ... }
-
-        desktop: "1280px",
-        // => @media (min-width: 1280px) { ... }
-      },
       fontSize: {
         sm: "14px",
         normal: "16px",
         base: "18px",
-        xl: "48px",
-        "2xl": "64px",
+        "2lg": "26px",
+        xl: "32px",
+        "2xl": "48px",
+        "3xl": "64px",
       },
       colors: {
         "default-pink": "#EA8A83",
