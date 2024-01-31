@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Header />
-      <HeroSection className="items-center">
+      <HeroSection className="items-center 2xl:h-[620px]">
         <div id="img__heroSection">
           <Image
             src="/images/plant.png"
@@ -29,7 +29,10 @@ export default function Home() {
             xl:w-full
             xl:h-full
             2xl:w-full
-            2xl:h-auto"
+            2xl:h-auto
+            desktop-3xl:w-full
+            desktop-3xl:h-auto
+            "
           />
         </div>
         <div id="img__heroSection">
@@ -42,7 +45,10 @@ export default function Home() {
             xl:w-full
             xl:h-full
             2xl:w-full
-            2xl:h-auto"
+            2xl:h-auto
+            desktop-3xl:w-full
+            desktop-3xl:h-auto
+            "
           />
         </div>
         <Banner
@@ -57,7 +63,9 @@ export default function Home() {
         xl:w-[560px] 
         xl:h-[380px]
         2xl:w-[720px] 
-        2xl:h-[440px] 
+        2xl:h-[440px]
+        desktop-3xl:w-[720px] 
+        desktop-3xl:h-[440px] 
         "
         >
           <Paragraph>PSICOLOGA CRP 203094/908</Paragraph>
@@ -67,6 +75,7 @@ export default function Home() {
           lg:text-xl
           xl:text-2xl
           2xl:text-2xl
+          desktop-3xl:text-2xl
           "
           >
             Guiando mulheres em transformações internas com{" "}
@@ -85,6 +94,7 @@ export default function Home() {
           xl:w-[400px]
           xl:text-base 
           2xl:w-[400px]
+          desktop-3xl:w-[400px]
           font-normal 
           mt-[15px] 
           bg-default-pink 
@@ -102,6 +112,7 @@ export default function Home() {
       justify-center
       lg:h-[200px]
       h-[300px]
+      text-center
       "
       >
         <Title
@@ -109,9 +120,11 @@ export default function Home() {
         lg:text-xl
         lg:w-[729px]
         xl:w-[929px] 
-        2xl:text-2xl 
-        text-center 
-        mt-28
+        2xl:w-[729px]
+        2xl:text-xl
+        2xl:my-20
+        desktop-3xl:w-[929px]
+        desktop-3xl:my-28
         "
         >
           Você deveria viver uma{" "}
@@ -119,11 +132,22 @@ export default function Home() {
           sobreviver...
         </Title>
       </div>
-      <section id="section__carousel__swiper">
+      <section
+        className="
+      flex 
+      items-center 
+      overflow-hidden 
+      justify-between
+      2xl:h-[730px]
+      desktop-3xl:h-[980px]
+      "
+      >
         <div
           className="
-        mb-[600px]
-        lg:mb-[450px]
+        lg:mb-[600px]
+        xl:mb-[600px]  
+        2xl:mb-[800px]
+        desktop-3xl:mb-[1000px]
         "
         >
           <Image
@@ -131,7 +155,14 @@ export default function Home() {
             width={180}
             height={280}
             alt="Imagem vetorial com três circulos sobrepostos."
-            className="lg:w-[135px]"
+            className="
+            lg:w-[120px]
+            xl:w-[145px]
+            2xl:w-[170px]
+            desktop-3xl:w-[195px]
+            absolute
+            z-10
+            "
           />
         </div>
         <Banner
@@ -140,22 +171,25 @@ export default function Home() {
         lg:h-[440px]  
         xl:w-[630px]
         xl:h-[560px]
-        2xl:w-[750px] 
-        2xl:h-[680px] 
+        2xl:w-[630px] 
+        2xl:h-[560px]
+        desktop-3xl:w-[750px] 
+        desktop-3xl:h-[680px]
         flex 
         flex-col 
         justify-center 
         items-center 
-        absolute 
-        -z-10"
+        "
         >
           <Title
             className="
           lg:text-2lg
           lg:w-8/12
           xl:text-xl 
-          2xl:text-2xl 
-          w-10/12  
+          2xl:text-xl 
+          2xl:w-10/12
+          desktop-3xl:text-xl 
+          desktop-3xl:w-10/12
           "
           >
             Eu já ajudei centenas de mulheres que estavam enfrentando problemas
@@ -165,21 +199,35 @@ export default function Home() {
             m-auto            
             lg:text-[35px]  
             xl:text-[65px] 
-            2xl:text-[100px] 
-            
+            2xl:text-[75px] 
+            desktop-3xl:text-[75px] 
             "
             />
           </Title>
         </Banner>
-
-        <Carousel />
+        <Carousel
+          className="  
+      lg:h-[450px] 
+      lg:w-[60%]
+      lg:ml-20
+      xl:h-[480px] 
+      xl:w-[60%] 
+      2xl:h-[500px] 
+      2xl:w-[55%]
+      desktop-3xl:h-[550px]
+      desktop-3xl:w-[55%]
+      absolute
+      z-10
+      "
+        />
       </section>
       <AboutMe className="flex justify-around items-center">
         <div className="flex flex-col w-1/3">
           <Title
             className="
-          2xl:text-2xl
-          lg:text-xl
+            lg:text-xl
+            2xl:text-2xl
+            desktop-3xl:text-2xl
           "
           >
             {" "}
@@ -198,7 +246,9 @@ export default function Home() {
           font-lato 
           mt-5 
           lg:text-[20px]
-          2xl:text-[26px]"
+          2xl:text-[26px]
+          desktop-3xl:text-[26px]
+          "
           >
             Conheça minhas expeiências e qualificações
           </p>

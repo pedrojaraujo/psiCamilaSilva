@@ -5,8 +5,9 @@ const Header = () => {
   return (
     <header
       className="
-    desktop:h-[120px]
-    laptop:h-[80px]
+    lg:h-[90px]
+    xl:h-[125px]
+    2xl:h-[135px]
     flex 
     justify-between 
     items-center 
@@ -20,10 +21,14 @@ const Header = () => {
       <div>
         <Image
           src="/images/logo.svg"
-          width={102}
-          height={102}
+          width={202}
+          height={202}
           alt="Logo escrito Camila Silva psicóloga."
-          className="desktop:w-[102px] laptop:w-[80px]"
+          className="
+          lg:w-[85px]
+          xl:w-[110px] 
+          2xl:w-[130px] 
+          "
         />
       </div>
       <div className="flex items-center gap-10">

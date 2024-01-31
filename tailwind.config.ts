@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "desktop-3xl": "1800px",
+      },
       fontSize: {
         sm: "14px",
         normal: "16px",

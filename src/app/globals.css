@@ -14,9 +14,3 @@
   display: flex;
   justify-content: center;
 }
-
-#section__carousel__swiper {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
