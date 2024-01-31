@@ -23,10 +23,8 @@ const Carousel = ({ className }: Props) => {
       <SwiperSlide>
         <Card
           className="
-          lg:w-[224px]
-          lg:h-[385px]
-          xl:w-[265px]
-          xl:h-[445px]
+          xl:w-[180px] 
+          xl:h-[345px]
           2xl:w-[265px] 
           2xl:h-[445px]
           desktop-3xl:w-[306px]  
@@ -39,10 +37,8 @@ const Carousel = ({ className }: Props) => {
       <SwiperSlide>
         <Card
           className="
-          lg:w-[224px]
-          lg:h-[385px]
-          xl:w-[265px]
-          xl:h-[445px]
+          xl:w-[180px] 
+          xl:h-[345px]
           2xl:w-[265px] 
           2xl:h-[445px]
           desktop-3xl:w-[306px]  
@@ -55,10 +51,8 @@ const Carousel = ({ className }: Props) => {
       <SwiperSlide>
         <Card
           className="
-          lg:w-[224px]
-          lg:h-[385px]
-          xl:w-[265px]
-          xl:h-[445px]
+          xl:w-[180px] 
+          xl:h-[345px]
           2xl:w-[265px] 
           2xl:h-[445px]
           desktop-3xl:w-[306px]  
@@ -71,10 +65,8 @@ const Carousel = ({ className }: Props) => {
       <SwiperSlide>
         <Card
           className="
-          lg:w-[224px]
-          lg:h-[385px]
-          xl:w-[265px]
-          xl:h-[445px]
+          xl:w-[180px] 
+          xl:h-[345px]
           2xl:w-[265px] 
           2xl:h-[445px]
           desktop-3xl:w-[306px]  
@@ -87,10 +79,8 @@ const Carousel = ({ className }: Props) => {
       <SwiperSlide>
         <Card
           className="
-          lg:w-[224px]
-          lg:h-[385px]
-          xl:w-[265px]
-          xl:h-[445px]
+          xl:w-[180px] 
+          xl:h-[345px]
           2xl:w-[265px] 
           2xl:h-[445px]
           desktop-3xl:w-[306px]  

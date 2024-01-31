@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Header />
-      <HeroSection className="items-center 2xl:h-[620px]">
+      <HeroSection className="items-center xl:h-[660px] 2xl:h-[645px] desktop-3xl:h-[780px]">
         <div id="img__heroSection">
           <Image
             src="/images/plant.png"
@@ -26,8 +26,8 @@ export default function Home() {
             height={2832}
             alt="Logo escrito Camila Silva psicóloga."
             className="
-            xl:w-full
-            xl:h-full
+            xl:w-[728px]
+            xl:h-[660px]
             2xl:w-full
             2xl:h-auto
             desktop-3xl:w-full
@@ -42,8 +42,8 @@ export default function Home() {
             height={2832}
             alt="Logo escrito Camila Silva psicóloga."
             className="
-            xl:w-full
-            xl:h-full
+            xl:w-[728px]
+            xl:h-[660px]
             2xl:w-full
             2xl:h-auto
             desktop-3xl:w-full
@@ -61,7 +61,7 @@ export default function Home() {
         lg:w-[560px] 
         lg:h-[380px]
         xl:w-[560px] 
-        xl:h-[380px]
+        xl:h-[440px]
         2xl:w-[720px] 
         2xl:h-[440px]
         desktop-3xl:w-[720px] 
@@ -73,7 +73,7 @@ export default function Home() {
             isMainHeading
             className="
           lg:text-xl
-          xl:text-2xl
+          xl:text-xl
           2xl:text-2xl
           desktop-3xl:text-2xl
           "
@@ -91,8 +91,8 @@ export default function Home() {
             className="
           lg:text-sm
           lg:w-[300px]
-          xl:w-[400px]
-          xl:text-base 
+          xl:w-[350px]
+          xl:text-normal
           2xl:w-[400px]
           desktop-3xl:w-[400px]
           font-normal 
@@ -119,10 +119,12 @@ export default function Home() {
           className="
         lg:text-xl
         lg:w-[729px]
-        xl:w-[929px] 
+        xl:w-[729px] 
+        xl:my-14
         2xl:w-[729px]
         2xl:text-xl
-        2xl:my-20
+        2xl:my-16
+        desktop-3xl:text-2xl
         desktop-3xl:w-[929px]
         desktop-3xl:my-28
         "
@@ -139,13 +141,13 @@ export default function Home() {
       overflow-hidden 
       justify-between
       2xl:h-[730px]
-      desktop-3xl:h-[980px]
+      desktop-3xl:h-[800px]
       "
       >
         <div
           className="
         lg:mb-[600px]
-        xl:mb-[600px]  
+        xl:mb-[650px]  
         2xl:mb-[800px]
         desktop-3xl:mb-[1000px]
         "
@@ -169,8 +171,8 @@ export default function Home() {
           className="
         lg:w-[510px]
         lg:h-[440px]  
-        xl:w-[630px]
-        xl:h-[560px]
+        xl:w-[560px]
+        xl:h-[480px]
         2xl:w-[630px] 
         2xl:h-[560px]
         desktop-3xl:w-[750px] 
@@ -198,7 +200,7 @@ export default function Home() {
               className="
             m-auto            
             lg:text-[35px]  
-            xl:text-[65px] 
+            xl:text-[45px] 
             2xl:text-[75px] 
             desktop-3xl:text-[75px] 
             "
@@ -210,8 +212,8 @@ export default function Home() {
       lg:h-[450px] 
       lg:w-[60%]
       lg:ml-20
-      xl:h-[480px] 
-      xl:w-[60%] 
+      xl:h-[400px] 
+      xl:w-[45%] 
       2xl:h-[500px] 
       2xl:w-[55%]
       desktop-3xl:h-[550px]
@@ -221,7 +223,7 @@ export default function Home() {
       "
         />
       </section>
-      <AboutMe className="flex justify-around items-center">
+      <AboutMe className="flex justify-around items-center desktop-3xl:h-[800px]">
         <div className="flex flex-col w-1/3">
           <Title
             className="
@@ -298,12 +300,14 @@ export default function Home() {
             className="
           bg-default-greenLight 
           font-normal 
-          xl:text-lg 
           mt-5 
-          xl:w-[75%]
           lg:w-[75%]
           lg:text-sm
           lg:py-2
+          xl:text-base
+          xl:w-[75%]
+          2xl:w-[75%]
+          desktop-3xl:w-[75%]
           "
           >
             QUERO AGENDAR UMA CONSULTA
@@ -315,7 +319,7 @@ export default function Home() {
             width={526}
             height={575}
             alt="Camila Silva psicóloga."
-            className="lg:w-[420px]"
+            className="lg:w-[420px] desktop-3xl:w-[620px]"
           />
         </div>
       </AboutMe>
