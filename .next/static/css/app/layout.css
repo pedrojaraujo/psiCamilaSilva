@@ -774,6 +774,18 @@ video {
 .mt-\[15px\] {
   margin-top: 15px;
 }
+.mb-\[30\%\] {
+  margin-bottom: 30%;
+}
+.mb-\[50\%\] {
+  margin-bottom: 50%;
+}
+.mb-\[60\%\] {
+  margin-bottom: 60%;
+}
+.mb-\[55\%\] {
+  margin-bottom: 55%;
+}
 .flex {
   display: flex;
 }
@@ -794,6 +806,9 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.w-full {
+  width: 100%;
 }
 .flex-col {
   flex-direction: column;
@@ -955,12 +970,37 @@ video {
 
 @media (min-width: 1024px) {
 
+  .lg\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
   .lg\:mb-\[600px\] {
     margin-bottom: 600px;
   }
 
   .lg\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .lg\:mb-\[400px\] {
+    margin-bottom: 400px;
+  }
+
+  .lg\:mb-\[450px\] {
+    margin-bottom: 450px;
+  }
+
+  .lg\:mb-\[490px\] {
+    margin-bottom: 490px;
+  }
+
+  .lg\:mb-\[510px\] {
+    margin-bottom: 510px;
+  }
+
+  .lg\:mb-\[530px\] {
+    margin-bottom: 530px;
   }
 
   .lg\:h-8 {
@@ -985,6 +1025,82 @@ video {
 
   .lg\:h-\[90px\] {
     height: 90px;
+  }
+
+  .lg\:h-\[345px\] {
+    height: 345px;
+  }
+
+  .lg\:h-\[320px\] {
+    height: 320px;
+  }
+
+  .lg\:h-\[390px\] {
+    height: 390px;
+  }
+
+  .lg\:h-\[730px\] {
+    height: 730px;
+  }
+
+  .lg\:h-\[530px\] {
+    height: 530px;
+  }
+
+  .lg\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:h-\[420px\] {
+    height: 420px;
+  }
+
+  .lg\:h-\[430px\] {
+    height: 430px;
+  }
+
+  .lg\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .lg\:h-\[150px\] {
+    height: 150px;
+  }
+
+  .lg\:h-\[385px\] {
+    height: 385px;
+  }
+
+  .lg\:h-\[335px\] {
+    height: 335px;
+  }
+
+  .lg\:h-\[837px\] {
+    height: 837px;
+  }
+
+  .lg\:h-\[790px\] {
+    height: 790px;
+  }
+
+  .lg\:h-\[720px\] {
+    height: 720px;
+  }
+
+  .lg\:h-\[680px\] {
+    height: 680px;
+  }
+
+  .lg\:h-\[650px\] {
+    height: 650px;
+  }
+
+  .lg\:h-\[620px\] {
+    height: 620px;
   }
 
   .lg\:w-8\/12 {
@@ -1031,6 +1147,50 @@ video {
     width: 85px;
   }
 
+  .lg\:w-\[180px\] {
+    width: 180px;
+  }
+
+  .lg\:w-\[390px\] {
+    width: 390px;
+  }
+
+  .lg\:w-\[170px\] {
+    width: 170px;
+  }
+
+  .lg\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .lg\:w-\[380px\] {
+    width: 380px;
+  }
+
+  .lg\:w-\[350px\] {
+    width: 350px;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-\[88\%\] {
+    width: 88%;
+  }
+
   .lg\:py-1 {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -1059,6 +1219,26 @@ video {
 
   .lg\:text-xl {
     font-size: 32px;
+  }
+
+  .lg\:text-base {
+    font-size: 18px;
+  }
+
+  .lg\:text-\[12px\] {
+    font-size: 12px;
+  }
+
+  .lg\:text-normal {
+    font-size: 16px;
+  }
+
+  .lg\:text-\[13px\] {
+    font-size: 13px;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
   }
 }
 
@@ -1141,6 +1321,18 @@ video {
     width: 75%;
   }
 
+  .xl\:w-\[420px\] {
+    width: 420px;
+  }
+
+  .xl\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .xl\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .xl\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1160,6 +1352,10 @@ video {
 
   .xl\:text-xl {
     font-size: 32px;
+  }
+
+  .xl\:text-\[40px\] {
+    font-size: 40px;
   }
 }
 
@@ -1242,12 +1438,20 @@ video {
     width: 729px;
   }
 
+  .\32xl\:w-\[75\%\] {
+    width: 75%;
+  }
+
   .\32xl\:w-full {
     width: 100%;
   }
 
-  .\32xl\:w-\[75\%\] {
-    width: 75%;
+  .\32xl\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .\32xl\:w-\[65\%\] {
+    width: 65%;
   }
 
   .\32xl\:text-2xl {
@@ -1264,6 +1468,10 @@ video {
 
   .\32xl\:text-xl {
     font-size: 32px;
+  }
+
+  .\32xl\:text-\[50px\] {
+    font-size: 50px;
   }
 }
 
@@ -1334,6 +1542,10 @@ video {
     width: 720px;
   }
 
+  .desktop-3xl\:w-\[75\%\] {
+    width: 75%;
+  }
+
   .desktop-3xl\:w-\[750px\] {
     width: 750px;
   }
@@ -1346,8 +1558,16 @@ video {
     width: 100%;
   }
 
-  .desktop-3xl\:w-\[75\%\] {
-    width: 75%;
+  .desktop-3xl\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .desktop-3xl\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .desktop-3xl\:w-\[65\%\] {
+    width: 65%;
   }
 
   .desktop-3xl\:text-2xl {
@@ -1364,6 +1584,10 @@ video {
 
   .desktop-3xl\:text-xl {
     font-size: 32px;
+  }
+
+  .desktop-3xl\:text-\[50px\] {
+    font-size: 50px;
   }
 }
 

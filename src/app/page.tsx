@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Banner from "@/components/Banner";
 import Header from "@/components/Header";
@@ -117,6 +116,7 @@ export default function Home() {
       >
         <Title
           className="
+        lg:my-14
         lg:text-xl
         lg:w-[729px]
         xl:w-[729px] 
@@ -140,13 +140,14 @@ export default function Home() {
       items-center 
       overflow-hidden 
       justify-between
+      lg:h-[430px]
       2xl:h-[730px]
       desktop-3xl:h-[800px]
       "
       >
         <div
           className="
-        lg:mb-[600px]
+        lg:mb-[530px]
         xl:mb-[650px]  
         2xl:mb-[800px]
         desktop-3xl:mb-[1000px]
@@ -169,8 +170,8 @@ export default function Home() {
         </div>
         <Banner
           className="
-        lg:w-[510px]
-        lg:h-[440px]  
+        lg:w-[390px]
+        lg:h-[390px]  
         xl:w-[560px]
         xl:h-[480px]
         2xl:w-[630px] 
@@ -209,8 +210,8 @@ export default function Home() {
         </Banner>
         <Carousel
           className="  
-      lg:h-[450px] 
-      lg:w-[60%]
+      lg:h-[380px] 
+      lg:w-[55%]
       lg:ml-20
       xl:h-[400px] 
       xl:w-[45%] 
@@ -236,7 +237,7 @@ export default function Home() {
             Prazer, sou a Camila Silva
           </Title>
           <Paragraph>PSICOLOGA CRP 203094/908</Paragraph>
-          <Paragraph className="w-[500px] mt-5">
+          <Paragraph className="lg:w-[400px] xl:w-[500px] desktop-3xl:w-[500px] mt-5">
             Psicóloga comprometida em oferecer um espaço acolhedor para todos
             que buscam equilíbrio emocional. Com um foco especial na saúde
             emocional da mulher. Estou aqui para guiá-lo(a) em uma jornada de
@@ -267,12 +268,22 @@ export default function Home() {
             mt-4 rounded-2xl 
             py-2
             w-[80%]
-            lg:w-[85%]
+            lg:w-full
             lg:py-1
+            xl:w-[80%]
+            2xl:w-[80%]
+            desktop-3xl:w-[80%]
           text-default-green
           "
           >
-            <LuBrain className="text-[50px]" />
+            <LuBrain
+              className="
+              lg:text-[30px]
+              xl:text-[40px]
+              2xl:text-[50px] 
+              desktop-3xl:text-[50px]
+            "
+            />
             <Paragraph>Terapia Cognitivo-Comportamental</Paragraph>
           </div>
           <div
@@ -287,13 +298,22 @@ export default function Home() {
             border-default-greenLight 
             mt-4 rounded-2xl 
             py-2
-            w-[80%]
-            lg:w-[85%]
+            lg:w-full
             lg:py-1
+            xl:w-[80%]
+            2xl:w-[80%]
+            desktop-3xl:w-[80%]
           text-default-green
           "
           >
-            <PiFlowerLotusLight className="text-[50px]" />
+            <PiFlowerLotusLight
+              className="
+            lg:text-[30px]
+            xl:text-[40px]
+            2xl:text-[50px] 
+            desktop-3xl:text-[50px]
+            "
+            />
             <Paragraph>Mindfulness e Espiritualidade</Paragraph>
           </div>
           <Button
@@ -301,13 +321,13 @@ export default function Home() {
           bg-default-greenLight 
           font-normal 
           mt-5 
-          lg:w-[75%]
-          lg:text-sm
-          lg:py-2
+          lg:w-[90%]
+          lg:text-[13px]
+          lg:py-1
           xl:text-base
           xl:w-[75%]
-          2xl:w-[75%]
-          desktop-3xl:w-[75%]
+          2xl:w-[65%]
+          desktop-3xl:w-[65%]
           "
           >
             QUERO AGENDAR UMA CONSULTA
@@ -319,7 +339,7 @@ export default function Home() {
             width={526}
             height={575}
             alt="Camila Silva psicóloga."
-            className="lg:w-[420px] desktop-3xl:w-[620px]"
+            className="lg:w-[350px] xl:w-[420px] desktop-3xl:w-[620px]"
           />
         </div>
       </AboutMe>
