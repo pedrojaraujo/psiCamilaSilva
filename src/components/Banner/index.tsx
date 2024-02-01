@@ -1,3 +1,4 @@
+import { Props } from "@/types/types";
 const Banner = ({ children, className }: Props) => {
   return (
     <div

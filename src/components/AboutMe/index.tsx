@@ -1,4 +1,5 @@
 import "./AboutMe.css";
+import { Props } from "@/types/types";
 
 const AboutMe = ({ children, className }: Props) => {
   return (

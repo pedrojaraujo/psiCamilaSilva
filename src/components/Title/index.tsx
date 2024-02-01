@@ -1,3 +1,4 @@
+import { Props } from "@/types/types";
 const Title = ({ children, className, isMainHeading }: Props) => {
   const Tag = isMainHeading ? "h1" : "h2";
 

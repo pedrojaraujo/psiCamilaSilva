@@ -191,7 +191,7 @@ export default function Home() {
           xl:text-xl 
           2xl:text-xl 
           2xl:w-10/12
-          desktop-3xl:text-xl 
+          desktop-3xl:text-2xl 
           desktop-3xl:w-10/12
           "
           >

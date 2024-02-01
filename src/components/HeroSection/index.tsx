@@ -1,3 +1,4 @@
+import { Props } from "@/types/types";
 const HeroSection = ({ children, className }: Props) => {
   return (
     <section

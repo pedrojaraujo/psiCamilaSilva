@@ -1,4 +1,4 @@
-import React from "react";
+import { Props } from "@/types/types";
 
 const Button = ({ children, className }: Props) => {
   return (

@@ -6,6 +6,8 @@ import Card from "@/components/Card";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
+import { Props, CardData } from "@/types/types";
+import { cardData } from "@/db/data";
 
 const Carousel = ({ className }: Props) => {
   return (
@@ -21,28 +23,31 @@ const Carousel = ({ className }: Props) => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >
-      <SwiperSlide>
-        <Card
-          className="
-          lg:w-[170px] 
-          lg:h-[335px]
-          xl:w-[180px] 
-          xl:h-[345px]
-          2xl:w-[265px] 
-          2xl:h-[445px]
-          desktop-3xl:w-[306px]  
-          desktop-3xl:h-[486px] 
-        "
-        >
-          <Image
-            src="/images/plant.png"
-            width={200}
-            height={200}
-            alt="Logo escrito Camila Silva psicóloga."
-            className="w-full mb-[55%]"
-          />
-        </Card>
-      </SwiperSlide>
+      {cardData.map((card: CardData) => (
+        <SwiperSlide key={card.id}>
+          <Card
+            className="
+              overflow-hidden
+              lg:w-[170px] 
+              lg:h-[335px]
+              xl:w-[180px] 
+              xl:h-[345px]
+              2xl:w-[265px] 
+              2xl:h-[445px]
+              desktop-3xl:w-[306px]  
+              desktop-3xl:h-[486px] 
+            "
+          >
+            <Image
+              src={`${card.imageSrc}`}
+              width={card.width}
+              height={card.height}
+              alt={`${card.altText}`}
+              className="w-full mb-[60%]"
+            />
+          </Card>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
